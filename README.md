@@ -68,4 +68,8 @@ Please cite both the dataset and the tool that produced it:
 
 ## License
 
-MIT, matching the Zenodo record. See [`LICENSE`](LICENSE).
+**Unresolved; the authors need to confirm.** Each snapshot declares
+**CC-BY-4.0** in its own `CITATION.cff` and `.zenodo.json`, and `2026_05/`
+ships the CC-BY-4.0 `LICENSE` text. The published Zenodo record for 2026_06
+v1.0, however, lists **MIT**. Until this is settled, the licence declared
+inside each snapshot folder applies to that snapshot.
