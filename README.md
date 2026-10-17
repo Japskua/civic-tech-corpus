@@ -33,8 +33,13 @@ Concept DOI for all Zenodo versions (always resolves to the latest):
 
 ### Unreleased (candidate for 2026_06 v1.1)
 
-Corrections to the written analyses only; no data files changed.
+Corrections to the written analyses and one provenance file; no data files
+changed.
 
+- `2026_06/crawl_2026_06.log` added: the full log of the 2026-06 crawl. It
+  records, among other things, which repositories needed the commit-history
+  fallback because GitHub's `/stats/commit_activity` returned nothing (50 of
+  55). It contains no tokens or e-mail addresses.
 - `2026_06/analysis_n55.md`: the dataset totals still described the earlier
   n=56 corpus. Corrected to 23 organisations (was 24), 90,468 commits
   (90,669), 660 contributors with 606 human (661 / 607), and 16 primary
