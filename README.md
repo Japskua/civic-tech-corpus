@@ -13,7 +13,6 @@ The tool lives in its own repository; this repository holds data only.
 | Snapshot | Crawled | n | Crawler | Archived copy | Used in |
 |---|---|---|---|---|---|
 | [`2026_06/`](2026_06/) | 2026-06-03 – 06-04 | 55 | [1.2](https://github.com/Japskua/civic-tech-git-crawler/tree/1.2) | Zenodo v1.0, [10.5281/zenodo.20497015](https://doi.org/10.5281/zenodo.20497015) (git tag `2026_06-v1.0`) | Olshanskaia et al., GoodIT '26 ([10.1145/3794786.3830780](https://doi.org/10.1145/3794786.3830780)) |
-| [`2026_05/`](2026_05/) | 2026-05-21 – 05-24 | 55 | [1.0](https://github.com/Japskua/civic-tech-git-crawler/tree/1.0); filtered to n=55 in [1.2](https://github.com/Japskua/civic-tech-git-crawler/tree/1.2) | Not on Zenodo (record 10.5281/zenodo.20493288 was removed) | — |
 
 Concept DOI for all Zenodo versions (always resolves to the latest):
 [10.5281/zenodo.20493287](https://doi.org/10.5281/zenodo.20493287).
@@ -33,9 +32,12 @@ Concept DOI for all Zenodo versions (always resolves to the latest):
 
 ### Unreleased (candidate for 2026_06 v1.1)
 
-Corrections to the written analyses and one provenance file; no data files
-changed.
+No changes to the 2026_06 data files.
 
+- `2026_05/` removed. It was an earlier internal crawl that will not be
+  published; it remains in this repository's history and in
+  civic-tech-git-crawler up to tag 1.2. Links to it from `2026_06/` were
+  replaced with plain text (they were already dead inside the Zenodo archive).
 - `2026_06/crawl_2026_06.log` added: the full log of the 2026-06 crawl. It
   records, among other things, which repositories needed the commit-history
   fallback because GitHub's `/stats/commit_activity` returned nothing (50 of
@@ -45,10 +47,6 @@ changed.
   (90,669), 660 contributors with 606 human (661 / 607), and 16 primary
   languages (17). The team-size vs. concentration correlation is ρ = −0.75
   (was −0.76).
-- `2026_05/analysis_n55.md`: 23 organisations (was 24) and four continents
-  (was five). The bus factor vs. HHI correlation has p = 2.3 × 10⁻¹¹ (was
-  1.5 × 10⁻¹¹). Burstiness is available for all 55 repositories; the n = 34
-  limit applies only to the burstiness vs. stale-issue test.
 
 ### 2026_06-v1.0 — 2026-06-01
 
@@ -69,7 +67,6 @@ Please cite both the dataset and the tool that produced it:
 ## License
 
 **Unresolved; the authors need to confirm.** Each snapshot declares
-**CC-BY-4.0** in its own `CITATION.cff` and `.zenodo.json`, and `2026_05/`
-ships the CC-BY-4.0 `LICENSE` text. The published Zenodo record for 2026_06
-v1.0, however, lists **MIT**. Until this is settled, the licence declared
+**CC-BY-4.0** in its own `CITATION.cff` and `.zenodo.json`. The
+published Zenodo record for 2026_06 v1.0, however, lists **MIT**. Until this is settled, the licence declared
 inside each snapshot folder applies to that snapshot.

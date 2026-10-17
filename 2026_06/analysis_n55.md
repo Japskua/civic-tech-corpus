@@ -1,7 +1,7 @@
 # AI Adoption and Contributor Dynamics in Open-Source Civic Technology: A 55-Project Snapshot (2026-06)
 
 This writeup accompanies the **2026-06 refresh** of the civic-tech corpus (n = 55).
-It re-crawls the same roster as [2026-05](../2026_05/analysis_n55.md) and adds a
+It re-crawls the same roster as the 2026-05 crawl (not published) and adds a
 new measurement layer — **AI-usage detection** — making AI adoption in civic-tech
 the headline subject of this snapshot. All figures are generated against this
 folder; see `statistical_analysis/`, `weekly_activity_analysis/`, and
