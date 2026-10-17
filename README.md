@@ -31,6 +31,20 @@ Concept DOI for all Zenodo versions (always resolves to the latest):
 
 ## Changelog
 
+### Unreleased (candidate for 2026_06 v1.1)
+
+Corrections to the written analyses only; no data files changed.
+
+- `2026_06/analysis_n55.md`: the dataset totals still described the earlier
+  n=56 corpus. Corrected to 23 organisations (was 24), 90,468 commits
+  (90,669), 660 contributors with 606 human (661 / 607), and 16 primary
+  languages (17). The team-size vs. concentration correlation is ρ = −0.75
+  (was −0.76).
+- `2026_05/analysis_n55.md`: 23 organisations (was 24) and four continents
+  (was five). The bus factor vs. HHI correlation has p = 2.3 × 10⁻¹¹ (was
+  1.5 × 10⁻¹¹). Burstiness is available for all 55 repositories; the n = 34
+  limit applies only to the burstiness vs. stale-issue test.
+
 ### 2026_06-v1.0 — 2026-06-01
 
 Initial Zenodo release of the 2026-06 snapshot,
