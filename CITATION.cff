@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "If you use this dataset, please cite it and the tool that produced it."
+type: dataset
+title: "Civic-Tech Corpus"
+license: MIT
+doi: 10.5281/zenodo.20493287
+repository: "https://github.com/Japskua/civic-tech-corpus"
+authors:
+  - family-names: Parkkila
+    given-names: Janne
+    affiliation: "LUT University"
+  - family-names: Tran
+    given-names: Duc Thinh
+    affiliation: "IMT Atlantique"
+    orcid: "https://orcid.org/0009-0008-2299-783X"
+  - family-names: Olshanskaia
+    given-names: Viktoriia
+    affiliation: "LUT University"
+    orcid: "https://orcid.org/0009-0000-3203-9944"
+  - family-names: Knutas
+    given-names: Antti
+    affiliation: "LUT University"
+    orcid: "https://orcid.org/0000-0002-6953-0021"
+references:
+  - type: software
+    title: "civic-tech-crawler"
+    repository-code: "https://github.com/Japskua/civic-tech-git-crawler"
+    authors:
+      - family-names: Parkkila
+        given-names: Janne
