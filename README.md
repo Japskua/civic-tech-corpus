@@ -38,6 +38,13 @@ No changes to the 2026_06 data files.
   published; it remains in this repository's history and in
   civic-tech-git-crawler up to tag 1.2. Links to it from `2026_06/` were
   replaced with plain text (they were already dead inside the Zenodo archive).
+- `2026_06/ai_signals_audit.csv` and `ai_signals_audit.py` added: every one of
+  the 94 rows in `ai_signals.csv` checked against the repositories as they stood
+  at crawl time. 91 are true positives and 1 is a false positive: a PR body
+  generated with Claude Code that mentions a database "cursor" was also credited
+  to the Cursor editor. 2 cannot be checked because their repository has since
+  been removed. Precision is therefore 98.9 % (91 of 92). Recall is not measured.
+  Each row records the verdict, how it was checked, and an evidence excerpt.
 - `2026_06/crawl_2026_06.log` added: the full log of the 2026-06 crawl. It
   records, among other things, which repositories needed the commit-history
   fallback because GitHub's `/stats/commit_activity` returned nothing (50 of
