@@ -14,8 +14,10 @@ The tool lives in its own repository; this repository holds data only.
 |---|---|---|---|---|---|
 | [`2026_06/`](2026_06/) | 2026-06-03 – 06-04 | 55 | [1.2](https://github.com/Japskua/civic-tech-git-crawler/tree/1.2) | Zenodo v1.0, [10.5281/zenodo.20497015](https://doi.org/10.5281/zenodo.20497015) (git tag `2026_06-v1.0`) | Olshanskaia et al., GoodIT '26 ([10.1145/3794786.3830780](https://doi.org/10.1145/3794786.3830780)) |
 
-Concept DOI for all Zenodo versions (always resolves to the latest):
-[10.5281/zenodo.20493287](https://doi.org/10.5281/zenodo.20493287).
+Cite the version DOI shown for each snapshot. Do not use Zenodo concept DOI
+10.5281/zenodo.20493287 for the dataset: the civic-tech-crawler software
+releases are filed under the same concept, so it resolves to the latest
+software release.
 
 ## Freezing policy
 
