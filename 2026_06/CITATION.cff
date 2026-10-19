@@ -40,7 +40,7 @@ authors:
     # orcid: "https://orcid.org/0000-0000-0000-0000"  # add ORCID if available
 date-released: "2026-06-04"
 version: "2026.06"
-license: CC-BY-4.0
+license: MIT
 repository-code: "https://github.com/Japskua/civic-tech-git-crawler"
 url: "https://github.com/Japskua/civic-tech-git-crawler/tree/master/datasets/2026_06"
 keywords:

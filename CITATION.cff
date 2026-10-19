@@ -2,6 +2,7 @@ cff-version: 1.2.0
 message: "If you use this dataset, please cite it and the tool that produced it."
 type: dataset
 title: "Civic-Tech Corpus"
+license: MIT
 doi: 10.5281/zenodo.20493287
 repository: "https://github.com/Japskua/civic-tech-corpus"
 authors:

@@ -34,6 +34,9 @@ Concept DOI for all Zenodo versions (always resolves to the latest):
 
 No changes to the 2026_06 data files.
 
+- Licence metadata corrected to **MIT**, the licence on the Zenodo record.
+  `2026_06/CITATION.cff`, `2026_06/.zenodo.json`, and `2026_06/README.md`
+  had stated CC-BY-4.0 in error. A root `LICENSE` file is added.
 - `2026_05/` removed. It was an earlier internal crawl that will not be
   published; it remains in this repository's history and in
   civic-tech-git-crawler up to tag 1.2. Links to it from `2026_06/` were
@@ -73,7 +76,4 @@ Please cite both the dataset and the tool that produced it:
 
 ## License
 
-**Unresolved; the authors need to confirm.** Each snapshot declares
-**CC-BY-4.0** in its own `CITATION.cff` and `.zenodo.json`. The
-published Zenodo record for 2026_06 v1.0, however, lists **MIT**. Until this is settled, the licence declared
-inside each snapshot folder applies to that snapshot.
+MIT, matching the Zenodo record. See [`LICENSE`](LICENSE).

@@ -16,7 +16,7 @@ any writeup — is generated against this folder.
 | **Crawl date** | 2026-06-03 → 2026-06-04 (single logical run; per-repo cache, resumable) |
 | **New in this refresh** | AI-usage detection (`ai_usage.csv`, `ai_signals.csv`, `ai_usage_analysis/`); traditional-ML detection narrowed to classical ML (LLM SDKs moved to the product-LLM group) |
 | **Version** | 2026.06 |
-| **License** | CC-BY-4.0 as declared here; the Zenodo v1.0 record lists MIT (see the repository README) |
+| **License** | MIT |
 | **Maintainer** | Janne Parkkila — japskua@gmail.com |
 | **Summary stats** | see "Dataset summary" below |
 
@@ -320,9 +320,8 @@ See `ai_usage_analysis/summary.md` for the full AI digest and
 
 ## License, citation, and versioning
 
-**License.** Released under **Creative Commons Attribution 4.0 International**
-(CC-BY-4.0). You may share and adapt with appropriate credit and indication of
-changes.
+**License.** Released under the **MIT License**, as on the Zenodo record. See
+`LICENSE` at the repository root.
 
 **Versioning.** This is version **2026.06** of the corpus — a refresh of the
 2026.05 crawl (not published) on the same roster, adding the AI-usage layer. It
