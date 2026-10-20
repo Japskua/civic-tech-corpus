@@ -9,10 +9,10 @@ any writeup — is generated against this folder.
 | | |
 |---|---|
 | **Repositories** | 55 |
-| **Organisations** | 24 |
+| **Organisations** | 23 |
 | **Regions** | North America (US + Canada), Africa, Japan, Taiwan, Europe (Germany, UK, Sweden) |
 | **Crawl tool** | `civic-tech-crawler` via `scripts/run_with_respawn.sh` |
-| **Crawl config** | repository list in `config.yaml` / `config.example.yaml` |
+| **Crawl config** | `config.example.yaml` at civic-tech-crawler [tag 1.2](https://github.com/Japskua/civic-tech-git-crawler/blob/1.2/config.example.yaml) (exactly these 55 repositories) |
 | **Crawl date** | 2026-06-03 → 2026-06-04 (single logical run; per-repo cache, resumable) |
 | **New in this refresh** | AI-usage detection (`ai_usage.csv`, `ai_signals.csv`, `ai_usage_analysis/`); traditional-ML detection narrowed to classical ML (LLM SDKs moved to the product-LLM group) |
 | **Version** | 2026.06 |
@@ -244,19 +244,32 @@ leaving **n = 55**.
 
 ## Reproducing this dataset
 
+The snapshot was produced by civic-tech-crawler
+[release 1.2](https://github.com/Japskua/civic-tech-git-crawler/tree/1.2), whose
+`config.example.yaml` lists exactly these 55 repositories. A re-crawl reads the
+repositories as they are on the day it runs, so its numbers will differ from this
+snapshot, which records them as of 2026-06-03/04.
+
 ```bash
-# From the repo root, with a GitHub token available:
+git clone https://github.com/Japskua/civic-tech-git-crawler.git
+cd civic-tech-git-crawler
+git checkout 1.2
+uv sync
 export GITHUB_TOKEN=$(gh auth token)
 
-# Full crawl with auto-respawn (resumable; config.yaml output -> datasets/2026_06/)
-scripts/run_with_respawn.sh config.yaml datasets/2026_06 55
+# At tag 1.2 the example config writes to ./datasets/2026_05; write to a clearer folder
+sed 's#\./datasets/2026_05#./output/2026_06#' config.example.yaml > config.2026_06.yaml
+
+# Full crawl with auto-respawn (resumable; the 2026-06 crawl took about 17 hours).
+# The second argument must match output.directory in the config.
+scripts/run_with_respawn.sh config.2026_06.yaml output/2026_06 55
 
 # Analysis pass
-uv run python scripts/statistical_analysis.py datasets/2026_06/
-uv run python scripts/weekly_activity_analysis.py datasets/2026_06/
-uv run python scripts/ai_usage_analysis.py datasets/2026_06/
-uv run python scripts/visualize.py --output-dir datasets/2026_06
-uv run python scripts/build_repo_folders.py datasets/2026_06/
+uv run python scripts/statistical_analysis.py output/2026_06/
+uv run python scripts/weekly_activity_analysis.py output/2026_06/
+uv run python scripts/ai_usage_analysis.py output/2026_06/
+uv run python scripts/visualize.py --output-dir output/2026_06
+uv run python scripts/build_repo_folders.py output/2026_06/
 ```
 
 ---
@@ -266,7 +279,7 @@ uv run python scripts/build_repo_folders.py datasets/2026_06/
 | | |
 |---|---|
 | **Repositories** | 55 |
-| **Organisations** | 24 |
+| **Organisations** | 23 |
 | **Primary languages** | 16 (C++, Dart, Dockerfile, Elixir, HCL, HTML, Java, JavaScript, Jinja, Kotlin, PHP, Python, Ruby, Svelte, TypeScript, Vue) |
 | **Contributors** | 660 (606 human, 54 bot) |
 | **Total commits** | 90,468 |
