@@ -36,6 +36,12 @@ software release.
 
 No changes to the 2026_06 data files.
 
+- `2026_06/README.md`: the reproduction steps still used the layout from before
+  the data left the tool repository (an unpublished `config.yaml` and a
+  `datasets/2026_06` folder). They now check out civic-tech-crawler tag 1.2
+  and run its `config.example.yaml`, which lists exactly the 55 repositories.
+  The organisation count is corrected from 24 to 23 in both tables, matching
+  `analysis_n55.md`.
 - Licence metadata corrected to **MIT**, the licence on the Zenodo record.
   `2026_06/CITATION.cff`, `2026_06/.zenodo.json`, and `2026_06/README.md`
   had stated CC-BY-4.0 in error. A root `LICENSE` file is added.
