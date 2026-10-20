@@ -345,28 +345,36 @@ See `ai_usage_analysis/summary.md` for the full AI digest and
 **License.** Released under the **MIT License**, as on the Zenodo record. See
 `LICENSE` at the repository root.
 
-**Versioning.** This is version **2026.06** of the corpus — a refresh of the
-2026.05 crawl (not published) on the same roster, adding the AI-usage layer. It
-is intended to be deposited as a new Zenodo version under the same **Concept DOI**
-as 2026.05, so a citation to the Concept DOI resolves to the latest version while
-a version DOI pins this snapshot.
+**Versioning.** Snapshot 2026.06 refreshes the unpublished 2026.05 crawl of the
+same roster and adds the AI-usage layer. It is archived on Zenodo as **version
+1.0**, [10.5281/zenodo.20497015](https://doi.org/10.5281/zenodo.20497015), and git
+tag `2026_06-v1.0` in this repository is byte-identical to that archive. It was
+produced by civic-tech-crawler
+[release 1.2](https://github.com/Japskua/civic-tech-git-crawler/tree/1.2) and is the
+version used in Olshanskaia et al., *Technological Landscape of Civic Tech: Current Practices and Lessons Learned*, GoodIT '26 ([10.1145/3794786.3830780](https://doi.org/10.1145/3794786.3830780)). Later corrections to this folder are listed in the
+repository changelog and do not change that archive. Cite the version DOI; do not
+use the Zenodo concept DOI 10.5281/zenodo.20493287, which also groups the
+crawler's software releases.
 
 **How to cite.** Please cite both the dataset and the crawler.
 
 ```bibtex
 @dataset{civic_tech_corpus_2026_06,
-  title     = {Civic-Tech Corpus — 2026-06 Refresh (n = 55, with AI-usage detection)},
+  title     = {Civic-Tech Corpus 06/2026},
   author    = {Parkkila, Janne and Tran, Duc Thinh and Olshanskaia, Viktoriia and Knutas, Antti},
   year      = {2026},
   publisher = {Zenodo},
-  version   = {2026.06}
+  version   = {1.0},
+  doi       = {10.5281/zenodo.20497015}
 }
 
-@software{civic_tech_crawler,
-  title  = {Civic Tech Git Crawler: GitHub Repository Metrics for Open Source Research},
-  author = {Parkkila, Janne},
-  year   = {2026},
-  url    = {https://github.com/Japskua/civic-tech-git-crawler}
+@software{civic_tech_crawler_1_2,
+  title   = {civic-tech-crawler},
+  author  = {Parkkila, Janne and Olshanskaia, Viktoriia and Tran, Duc Thinh and Knutas, Antti},
+  year    = {2026},
+  version = {1.2},
+  url     = {https://github.com/Japskua/civic-tech-git-crawler/tree/1.2},
+  note    = {The release that produced this snapshot}
 }
 ```
 

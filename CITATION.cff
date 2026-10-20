@@ -28,3 +28,10 @@ references:
     authors:
       - family-names: Parkkila
         given-names: Janne
+      - family-names: Olshanskaia
+        given-names: Viktoriia
+      - family-names: Tran
+        given-names: Duc Thinh
+      - family-names: Knutas
+        given-names: Antti
+    notes: "The 2026_06 snapshot (Zenodo 10.5281/zenodo.20497015, version 1.0) was produced by release 1.2: https://github.com/Japskua/civic-tech-git-crawler/tree/1.2"
