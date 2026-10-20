@@ -128,6 +128,15 @@ Grouped by community / region (same grouping as `config.yaml`):
   and `CodeforLeipzig/leipziggiesst` inherit upstream commit/contributor history,
   so concentration and AI-usage signals may belong to the parent project, not the
   fork. (e.g. `connectedkw`'s product-LLM `openai` signal is likely inherited.)
+- **`codeforjapan/BirdXplorer` has no CHAOSS, core-periphery, or issue data.**
+  Its cached result came from a test run on 2026-06-03 at 19:46 UTC that skipped
+  those collectors, and the full crawl, which started 35 minutes later, reused it
+  (the crawl log reports "56 crawled, 1 from cache"). The repository is therefore
+  absent from `chaoss_summary.csv`, `core_periphery.csv`, `issue_records.csv`, and
+  `issue_summary.csv`, and aggregates over CHAOSS metrics cover 54 repositories.
+  Its repository, contributor, pull-request, commit-history, weekly-activity, and
+  AI-usage data are complete. The missing values cannot be recomputed as of the
+  crawl date. civic-tech-crawler 1.3.1 re-crawls such partial cache entries.
 - **Placeholder / very small repos.** Several entries are early-stage or
   near-empty; their metrics are valid but low-information.
 - **Scale outliers.** `meshtastic/firmware` (~7.6k★), `iiab/iiab` (~1.9k★), and

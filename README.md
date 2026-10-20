@@ -36,6 +36,11 @@ software release.
 
 No changes to the 2026_06 data files.
 
+- `2026_06/README.md`: new data-quality caveat. `codeforjapan/BirdXplorer` has no
+  CHAOSS, core-periphery, or issue data, because the full crawl reused a cached
+  result from a test run that skipped those collectors. The four affected tables
+  are named; everything else for the repository is complete. The crawler bug
+  behind it is fixed in civic-tech-crawler 1.3.1.
 - `2026_06/README.md`: the reproduction steps still used the layout from before
   the data left the tool repository (an unpublished `config.yaml` and a
   `datasets/2026_06` folder). They now check out civic-tech-crawler tag 1.2
