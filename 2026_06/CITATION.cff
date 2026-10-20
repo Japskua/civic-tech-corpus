@@ -5,7 +5,7 @@ message: >-
 type: dataset
 title: "Civic-Tech Corpus — 2026-06 Refresh (n = 55, with AI-usage detection)"
 abstract: >-
-  A curated corpus of 55 open-source civic-technology repositories from 24
+  A curated corpus of 55 open-source civic-technology repositories from 23
   organisations across five continents (North America, Africa, Japan, Taiwan,
   Europe), re-crawled 2026-06-03 to 2026-06-04. It extends the 2026-05 refresh
   with an AI-usage detection layer that distinguishes three phenomena:
@@ -42,7 +42,8 @@ date-released: "2026-06-04"
 version: "2026.06"
 license: MIT
 repository-code: "https://github.com/Japskua/civic-tech-git-crawler"
-url: "https://github.com/Japskua/civic-tech-git-crawler/tree/master/datasets/2026_06"
+doi: 10.5281/zenodo.20497015
+url: "https://github.com/Japskua/civic-tech-corpus/tree/2026_06-v1.0/2026_06"
 keywords:
   - civic-technology
   - open-source-sustainability
@@ -54,16 +55,43 @@ keywords:
   - large-language-models
   - generative-AI
   - dataset
-# doi: "10.5281/zenodo.XXXXXXXX"   # add the Zenodo version DOI after deposit
 identifiers:
+  - type: doi
+    value: 10.5281/zenodo.20497015
+    description: "Zenodo version 1.0, the version used in Olshanskaia et al., GoodIT '26"
   - type: url
-    value: "https://github.com/Japskua/civic-tech-git-crawler/tree/master/datasets/2026_06"
-    description: "Source location of this dataset in the project repository"
+    value: "https://github.com/Japskua/civic-tech-corpus/tree/2026_06-v1.0/2026_06"
+    description: "Git tag 2026_06-v1.0, byte-identical to Zenodo version 1.0"
 references:
   - type: software
-    title: "Civic Tech Git Crawler"
+    title: "civic-tech-crawler"
+    version: "1.2"
     authors:
       - family-names: Parkkila
         given-names: Janne
+      - family-names: Olshanskaia
+        given-names: Viktoriia
+      - family-names: Tran
+        given-names: Duc Thinh
+      - family-names: Knutas
+        given-names: Antti
     repository-code: "https://github.com/Japskua/civic-tech-git-crawler"
-    notes: "The crawler that produced this dataset; see CITATION.cff at the repo root."
+    url: "https://github.com/Japskua/civic-tech-git-crawler/tree/1.2"
+    notes: "The release that produced this dataset."
+  - type: conference-paper
+    title: "Technological Landscape of Civic Tech: Current Practices and Lessons Learned"
+    authors:
+      - family-names: Olshanskaia
+        given-names: Viktoriia
+      - family-names: Tran
+        given-names: Duc Thinh
+      - family-names: Parkkila
+        given-names: Janne
+      - family-names: Knutas
+        given-names: Antti
+    collection-title: "GoodIT '26"
+    year: 2026
+    start: 402
+    end: 410
+    doi: 10.1145/3794786.3830780
+    notes: "Uses version 1.0 of this dataset (10.5281/zenodo.20497015)."

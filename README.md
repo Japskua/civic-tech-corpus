@@ -36,6 +36,14 @@ software release.
 
 No changes to the 2026_06 data files.
 
+- Pointers to the archived version used in GoodIT '26. `2026_06/README.md`
+  (Versioning, How to cite) and `2026_06/CITATION.cff` now name Zenodo version
+  1.0 (10.5281/zenodo.20497015), git tag `2026_06-v1.0`, crawler release 1.2, and
+  the GoodIT '26 paper that used it. Before, the README said the snapshot was
+  still to be deposited under the concept DOI, and `CITATION.cff` had a DOI
+  placeholder and a URL to the dataset's old location in the tool repository.
+  The `CITATION.cff` abstract's organisation count is corrected from 24 to 23.
+  The root `CITATION.cff` names all four crawler authors and release 1.2.
 - `2026_06/README.md`: new data-quality caveat. `codeforjapan/BirdXplorer` has no
   CHAOSS, core-periphery, or issue data, because the full crawl reused a cached
   result from a test run that skipped those collectors. The four affected tables
